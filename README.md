@@ -66,7 +66,7 @@ Java swing and mysql based GUI application that helps to track daily calorie con
 	│	      ├─> Name  
 	│	      ├─> Email  
 	│	      ├─> Age  
-	│	      ├─ Height  
+	│	      ├─> Height  
 	│	      ├─> weight  
 	│	      ├─> phone  
 	│	      ├─> photo  
