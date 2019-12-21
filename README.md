@@ -48,75 +48,72 @@ Java swing and mysql based GUI application that helps to track daily calorie con
       * User can write or update data like height, weight and calorie consumed and visualise using a 2D graph.
 
 
-#### Database structure  
-├── Admin  
-│   └─> Columns  
-│	      ├─> ID  
-│	      └─> Password  
-│  
-├── Habits  
-│   └─> Columns  
-│	      ├─> User ID  
-│	      ├─> type (possible values are vegan, vegetarian and non vegetarian)  
-│	      ├─> Exercise (possible values are sedentary, normal, active and very active)  
-│	      └─> wants to (indicates user interest to lose, maintain or gain weight)  
-│  
-├── User  
-│   └─> Columns  
-│	      ├─> Name  
-│	      ├─> Email  
-│	      ├─> Age  
-│	      ├─ Height  
-│	      ├─> weight  
-│	      ├─> phone  
-│	      ├─> photo  
-│	      └─> sex  
-│  
-├── History  
-│   ├─> Columns  
-│	  │   ├─> User ID  
-│	  │   ├─> food1  
-│	  │   ├─> food2  
-│	  │   ├─> food3  
-│	  │   └─> date  
-│   └─> Trigger  
-│	      └─> Deletes 7 day old entires after insert  
-│  
-├── Login  
-│   └─> Columns  
-│	      ├─> User ID  
-│	      └─> Password  
-│  
-├── Tracker  
-│   ├─> Columns  
-│	  │   ├─> User ID  
-│	  │   ├─> height  
-│	  │   ├─> weight  
-│	  │   ├─> total_calories  
-│	  │   └─> date  
-│   └─> Trigger  
-│	      └─> Deletes 30 day old entires after insert  
-│  
-├── vegetables-and-fruits  
-│   └─> Columns  
-│	      ├─> id  
-│	      ├─> Name  
-│	      ├─> Amount  
-│       └─> Calories  
-│   
-├── Nonveg  
-│   └─> Columns  
-│	      ├─> id  
-│	      ├─> Name  
-│	      ├─> Amount  
-│       └─> Calories  
-│    
-└── snacks  
-    └─> Columns  
-	      ├─> id  
-	      ├─> Name  
-	      ├─> Amount  
-        └─> Calories  
-
-
-
+### Database structure  
+	├── Admin  
+	│   └─> Columns  
+	│	      ├─> ID  
+	│	      └─> Password  
+	│  
+	├── Habits  
+	│   └─> Columns  
+	│	      ├─> User ID  
+	│	      ├─> type (possible values are vegan, vegetarian and non vegetarian)  
+	│	      ├─> Exercise (possible values are sedentary, normal, active and very active)  
+	│	      └─> wants to (indicates user interest to lose, maintain or gain weight)  
+	│  
+	├── User  
+	│   └─> Columns  
+	│	      ├─> Name  
+	│	      ├─> Email  
+	│	      ├─> Age  
+	│	      ├─ Height  
+	│	      ├─> weight  
+	│	      ├─> phone  
+	│	      ├─> photo  
+	│	      └─> sex  
+	│  
+	├── History  
+	│   ├─> Columns  
+	│   │         ├─> User ID  
+	│   │         ├─> food1  
+	│   │         ├─> food2  
+	│   │         ├─> food3  
+	│   │         └─> date  
+	│   └─> Trigger  
+	│	      └─> Deletes 7 day old entires after insert  
+	│  
+	├── Login  
+	│   └─> Columns  
+	│	      ├─> User ID  
+	│	      └─> Password  
+	│  
+	├── Tracker  
+	│   ├─> Columns  
+	│   │         ├─> User ID  
+	│   │         ├─> height  
+	│   │         ├─> weight  
+	│   │         ├─> total_calories  
+	│   │         └─> date  
+	│   └─> Trigger  
+	│	      └─> Deletes 30 day old entires after insert  
+	│  
+	├── vegetables-and-fruits  
+	│   └─> Columns  
+	│	      ├─> id  
+	│	      ├─> Name  
+	│	      ├─> Amount  
+	│             └─> Calories  
+	│   
+	├── Nonveg  
+	│   └─> Columns  
+	│	      ├─> id  
+	│	      ├─> Name  
+	│	      ├─> Amount  
+	│             └─> Calories  
+	│    
+	└── snacks  
+	    └─> Columns  
+		      ├─> id  
+		      ├─> Name  
+		      ├─> Amount  
+		      └─> Calories  
